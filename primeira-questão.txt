@@ -1,0 +1,21 @@
+  a, b, c: real
+
+   escreva("Digite valor de A:")
+   leia(a)
+   limpatela
+   
+   escreva("Digite valor de B:")
+   leia(b)
+   limpatela
+   
+   escreva("Digite valor de C:")
+   leia(c)
+   limpatela
+
+   se(a + b) < c entao
+      escreval(a," +",b," é menor que",c)
+   senao
+      escreval(a," +",b," é maior que",c)
+   fimse
+
+Fimalgoritmo
