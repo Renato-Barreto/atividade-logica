@@ -1,0 +1,34 @@
+Var
+   nome: caracter
+   sexo: caracter
+   estadocivil: caracter
+   tempodecasado: inteiro
+
+Inicio
+
+   escreva("Escreva o seu nome:")
+   leia(nome)
+   limpatela
+
+   escreval("Qual o seu sexo? (F - Feminino ou M - Masculino)")
+   leia(sexo)
+   limpatela
+
+   escreva("Qual o seu estado civil? ")
+   leia(estadocivil)
+   limpatela
+
+
+   se(sexo = "F") e (estadocivil = "casada")entao
+      escreva("digite seu tempo de casada em anos: ")
+      leia(tempodecasado)
+      limpatela
+   fimse
+   
+   escreval("Seu nome: ",nome)
+   escreval("Seu sexo: ",sexo)
+   escreval("Seu estado civi: ",estadocivil)
+   escreval("Seu tempo de casada: ",tempodecasado)
+
+
+Fimalgoritmo
