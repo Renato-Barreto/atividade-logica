@@ -1,0 +1,24 @@
+Var
+   a,b: inteiro
+   resultado: inteiro
+
+Inicio
+
+   escreva("Escreva o primeiro número:")
+   leia(a)
+   limpatela
+
+   escreva("Escreva o segundo número:")
+   leia(b)
+   limpatela
+
+   se(a = b) entao
+      resultado <- (a + b)
+   senao
+      resultado <- (a * b)
+   fimse
+
+   escreval("o resultado é:",resultado)
+
+
+Fimalgoritmo
