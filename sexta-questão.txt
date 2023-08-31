@@ -19,15 +19,15 @@ Inicio
    media <- (primeiraNota + segundaNota)/2
 
    se(media >= 6)entao
-      escreva("Parabéns, você foi aprovado com média:",media :2:2)
+      escreva("Parabéns, você foi aprovado com média:",media :2:1)
    fimse
 
    se(media >= 4) e (media <6)entao
-      escreva("Sua média foi ",media :2:2,", logo, está de recuperação")
+      escreva("Sua média foi ",media :2:1,", logo, está de recuperação")
    fimse
 
    se(media < 4)entao
-      escreva("Infelizmente você foi reprovado com média:",media :2:2)
+      escreva("Infelizmente você foi reprovado com média:",media :2:1)
    fimse
 
 
