@@ -1,0 +1,40 @@
+Algoritmo "semnome"
+
+Var
+   produto: caracter
+   quantidade: real
+   preco: real
+   total: real
+   valorFinal: real
+
+Inicio
+
+   escreval("Bem-vindo(a) a Loja 10Conto")
+   escreval("")
+   escreva("Qual produto você vai comprar?")
+   leia(produto)
+   limpatela
+
+   escreva("digite a quantidade de ",produto," que você vai querer:")
+   leia(quantidade)
+   limpatela
+
+   preco <- (10)
+   total <- (quantidade * preco)
+
+   se(quantidade <= 5)entao
+      valorFinal <- total * (100-2)/100 //ou *0.98
+   fimse
+
+   se(quantidade > 5) e (quantidade <= 10)entao
+      valorFinal <- total * (100-3)/100 //ou *0.97
+   fimse
+
+
+   se(quantidade > 10)entao
+      valorFinal <- total * (100-5)/100 //ou *0.95
+   fimse
+   
+   escreva("O valor final a se pagar é:",valorFinal)
+
+Fimalgoritmo
