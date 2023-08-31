@@ -1,0 +1,35 @@
+Algoritmo "semnome"
+
+Var
+   primeiraNota: real
+   segundaNota: real
+   media: real
+
+
+Inicio
+
+   escreva("Digite sua primeira nota:")
+   leia(primeiraNota)
+   limpatela
+
+   escreva("Digite sua segunda nota:")
+   leia(segundaNota)
+   limpatela
+
+   media <- (primeiraNota + segundaNota)/2
+
+   se(media >= 6)entao
+      escreva("Parabéns, você foi aprovado com média:",media)
+   fimse
+
+   se(media >= 4) e (media <6)entao
+      escreva("Sua média foi ",media,", logo, está de recuperação")
+   fimse
+
+   se(media < 4)entao
+      escreva("Infelizmente você foi reprovado com média:",media)
+   fimse
+
+
+
+Fimalgoritmo
