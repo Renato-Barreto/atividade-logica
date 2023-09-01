@@ -1,0 +1,48 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 31/08/2023
+Var
+   combustivel: caracter
+   litro,preco,valor,desconto: real
+
+
+Inicio
+   escreval("Qual combustível você deseja?")
+   escreva("Álcool ou Gasolina:")
+   leia(combustivel)
+   limpatela
+
+   se (combustivel = "Álcool") entao
+      preco <- 3.79
+      escreva("Quantos litros de álcool deseja?")
+      leia(litro)
+      valor <- litro * preco
+      limpatela
+
+      se(litro <= 25) entao
+         desconto <- valor * 0.98
+      senao
+         desconto <- valor * 0.96
+      fimse
+   fimse
+
+   se (combustivel = "Gasolina") entao
+      preco <- 6.59
+      escreva("Quantos litros de gasolina deseja?")
+      leia(litro)
+      valor <- litro * preco
+      limpatela
+
+      se(litro <= 25) entao
+         desconto <- valor * 0.97
+      senao
+         desconto <- valor * 0.95
+      fimse
+   fimse
+
+   escreval("o preço final foi:",desconto :2:2)
+
+Fimalgoritmo
