@@ -1,0 +1,37 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 31/08/2023
+Var
+emprestimo: real
+rendaMensal: real
+valorDePrestacao: real
+
+
+Inicio
+ escreval("Qual o valor total de sua renda?")
+   leia(rendaMensal)
+   limpatela
+
+   escreval("Quanto deseja pegar de empréstimo?")
+   leia(emprestimo)
+   limpatela
+
+   se (emprestimo <= rendaMensal * 10) entao
+      escreval("Deseja parcelar de quantas vezes?")
+      leia(valorDePrestacao)
+      limpatela
+   fimse
+
+   se (valorDePrestacao = 0.30 * rendaMensal) entao
+      escreval ("Empréstimo aprovado!")
+   fimse
+
+   se (valorDePrestacao > 0.30 * rendaMensal) entao
+      escreval("Empréstimo negado!")
+   fimse
+
+
+Fimalgoritmo
